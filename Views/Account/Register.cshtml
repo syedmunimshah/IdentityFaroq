@@ -1,0 +1,32 @@
+﻿@model IdentityFaroq.Models.DataTransfers.RegisterViewModel
+
+@{
+
+}
+
+<div class="container">
+    <div class="row">
+            <div class="col-6 mx-auto">
+                <h3 class="mt-1">Register</h3>
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="Name" aria-describedby="Name" asp-for="Name">     
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" asp-for="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="Password" asp-for="Password">
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+</div>
